@@ -1,0 +1,52 @@
+.photos {
+
+  h2 {
+    margin-bottom: 80px;
+    text-align: center;
+  }
+
+  .photos-slider {
+    padding-bottom: 60px;
+
+    width: 100%;
+    height: 100%;
+
+
+    .photos-slider__wrapper {
+      position: relative;
+      align-items: center;
+
+      .photos-slider__slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 55.7%;
+
+        .slide__img {
+          width: 100%;
+          transform: scale(.64);
+          opacity: .5;
+          transition: all 1s ease;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      .photos-slider__slide.swiper-slide-active {
+
+        .slide__img {
+          transform: scale(1);
+          opacity: 1;
+
+          img {
+            display: block;
+            margin-left: auto;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
